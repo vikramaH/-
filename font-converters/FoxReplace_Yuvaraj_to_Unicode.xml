@@ -1,0 +1,481 @@
+<substitutionlist version="0.12">
+  <group>
+    <urls>
+      <url>http://www.cdacnoida.in</url>
+    </urls>
+    <substitutions>
+      <substitution casesensitive="true">
+        <input type="text">"iM"</input>
+        <output>"Mi"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"|"</input>
+        <output>"ऽ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"K,"</input>
+        <output>"ख़"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"K"</input>
+        <output>"ख"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"#,"</input>
+        <output>"ख़्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"#"</input>
+        <output>"ख्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"k,"</input>
+        <output>"क़"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"k"</input>
+        <output>"क"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"@,"</input>
+        <output>"क़्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"@"</input>
+        <output>"क्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"G"</input>
+        <output>"घ्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"ga,"</input>
+        <output>"ग़"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"g"</input>
+        <output>"ग्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"="</input>
+        <output>"ङ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"C"</input>
+        <output>"छ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"c"</input>
+        <output>"च्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"J"</input>
+        <output>"झ्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"ja,"</input>
+        <output>"ज़"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"j"</input>
+        <output>"ज्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"H"</input>
+        <output>"ञ्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"z"</input>
+        <output>"ठ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"T"</input>
+        <output>"ट"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"Z,"</input>
+        <output>"ढ़"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"Z"</input>
+        <output>"ढ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"D,"</input>
+        <output>"ड़"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"D"</input>
+        <output>"ड"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"N"</input>
+        <output>"ण्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"q"</input>
+        <output>"थ्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"t"</input>
+        <output>"त"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"%"</input>
+        <output>"त्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"Q"</input>
+        <output>"ध्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"d"</input>
+        <output>"द"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"द्"</input>
+        <output>"द्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"n"</input>
+        <output>"न्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"f,"</input>
+        <output>"फ़"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"f"</input>
+        <output>"फ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"F"</input>
+        <output>"फ्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"p"</input>
+        <output>"प"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"P"</input>
+        <output>"प्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"B"</input>
+        <output>"भ्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"b"</input>
+        <output>"ब्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"m"</input>
+        <output>"म्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"y"</input>
+        <output>"य्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"r"</input>
+        <output>"र"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"ळ्"</input>
+        <output>"ळ्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"l"</input>
+        <output>"ल्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"v"</input>
+        <output>"व्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"S"</input>
+        <output>"श्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"E"</input>
+        <output>"श्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"Y"</input>
+        <output>"ष्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"s"</input>
+        <output>"स्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"h"</input>
+        <output>"ह"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"E`"</input>
+        <output>"श्र्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"p`"</input>
+        <output>"प्र्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">" `"</input>
+        <output>" ,"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"`"</input>
+        <output>"्र"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"/"</input>
+        <output>"्र"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"x"</input>
+        <output>"क्ष्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"~"</input>
+        <output>"त्र"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"&amp;"</input>
+        <output>"ज्ञ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"V"</input>
+        <output>"द्य"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"Ù"</input>
+        <output>"न्न"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"("</input>
+        <output>"ह्म"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"w"</input>
+        <output>"द्ध"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"É"</input>
+        <output>"रु"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"$"</input>
+        <output>"रू"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"Ë"</input>
+        <output>"क्र"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"W"</input>
+        <output>"द्व"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"&gt;"</input>
+        <output>"त्त्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"&gt;"</input>
+        <output>"क्त"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"_"</input>
+        <output>"द्द"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"+"</input>
+        <output>"ट्ट"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"AaO"</input>
+        <output>"औ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"AÝ"</input>
+        <output>"औ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"Aao"</input>
+        <output>"ओ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"Aa^"</input>
+        <output>"ऑ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"Aa"</input>
+        <output>"आ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"A"</input>
+        <output>"अ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"eo"</input>
+        <output>"ऐ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"e"</input>
+        <output>"ए"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"[-"</input>
+        <output>"ई"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"["</input>
+        <output>"इ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"}"</input>
+        <output>"ऊ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"]"</input>
+        <output>"उ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"ॠ"</input>
+        <output>"ॠ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"?"</input>
+        <output>"ऋ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"¸"</input>
+        <output>","</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"."</input>
+        <output>"|"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">" aa"</input>
+        <output>" ||"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">" a"</input>
+        <output>" |"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"\"</input>
+        <output>"्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"्a"</input>
+        <output>""</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"Ý"</input>
+        <output>"ौ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"aO"</input>
+        <output>"ौ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"O"</input>
+        <output>"ै"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"I"</input>
+        <output>"ी"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"U"</input>
+        <output>"ू"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"u"</input>
+        <output>"ु"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"R"</input>
+        <output>"ॄ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"ृ"</input>
+        <output>"ृ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"ao"</input>
+        <output>"ो"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"o"</input>
+        <output>"े"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"a^"</input>
+        <output>"ॉ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"a"</input>
+        <output>"ा"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"^M"</input>
+        <output>"ँ"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"M"</input>
+        <output>"ं"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"Á"</input>
+        <output>":"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"³"</input>
+        <output>"("</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"´"</input>
+        <output>")"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"¹"</input>
+        <output>"-"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"््"</input>
+        <output>"्"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="regexp">"i([कखगघचछजझटठडढढ़णतथदधनपफबभमयरलवशषसहक्ष])([्])([कखगघचछजझटठडढढ़णतथदधनपफबभमयरलवशषसहक्ष])"</input>
+        <output>"$1$2$3ि"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="regexp">"i([कखगघचछजझटठडढढ़णतथदधनपफबभमयरलवशषसहक्ष])"</input>
+        <output>"$1ि"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="regexp">"([कखगघचछजझटठडढढ़णतथदधनपफबभमयरलवशषसहक्ष])([ािीुूेैोौं]*)-"</input>
+        <output>"र्$1$2"</output>
+      </substitution>
+      <substitution casesensitive="true">
+        <input type="text">"*"</input>
+        <output>"ह्"</output>
+      </substitution>
+      <substitution>
+        <input type="regexp">"ं([ािीुूेैोौ])"</input>
+        <output>"$1ं"</output>
+      </substitution>
+      <substitution>
+        <input type="text">"ेा"</input>
+        <output>"ाे"</output>
+      </substitution>
+      <substitution>
+        <input type="text">"्ा"</input>
+        <output>""</output>
+      </substitution>
+    </substitutions>
+  </group>
+</substitutionlist>

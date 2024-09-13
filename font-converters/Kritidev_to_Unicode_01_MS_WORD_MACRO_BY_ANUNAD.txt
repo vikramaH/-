@@ -1,0 +1,194 @@
+﻿Sub Kritidev_to_Unicode_1()
+'
+'created on 07-11-2010
+'
+
+Dim i As Integer
+
+' array_one contains Krutidev charecters
+array_one = Array(ChrW(241), "Q+Z", "sas", "aa", ")Z", "ZZ", ChrW(8216), ChrW(8217), ChrW(8220), ChrW(8221), ChrW(229), ChrW(402), ChrW(8222), ChrW(8230), _
+ChrW(8224), ChrW(8225), ChrW(710), ChrW(8240), ChrW(352), ChrW(8249), ChrW(182) + "+", "d+", "[+k", "[+", "x+", "T+", "t+", "M+", "<+", "Q+", ";+", "j+", "u+", _
+ChrW(217) + "k", ChrW(217), ChrW(228), ChrW(8211), ChrW(8212), ChrW(233), ChrW(8482), "=kk", "f=k", ChrW(224), ChrW(225), ChrW(226), ChrW(227), ChrW(186) + "z", _
+ChrW(186), ChrW(237), "{k", "{", "=", ChrW(171), "N" + ChrW(238), "V" + ChrW(238), "B" + ChrW(238), "M" + ChrW(238), "<" + ChrW(238), "|", "K", "}", "J", _
+"V" + ChrW(170), "M" + ChrW(170), "<" + ChrW(170) + ChrW(170), "N" + ChrW(170), ChrW(216), ChrW(221), "nzZ", ChrW(230), ChrW(231), ChrW(193), "xz", "#", ":", _
+"v" + ChrW(8218), "vks", "vkS", "vk", "v", "b" + ChrW(177), ChrW(195), "bZ", "b", "m", ChrW(197), ",s", ",", "_", _
+ChrW(244), "d", "Dk", "D", ChrW(163), "[k", "[", "x", "Xk", "X", ChrW(196), "?k", "?", ChrW(179), _
+"p", "Pk", "P", "N", "t", "Tk", "T", ">", ChrW(247), ChrW(165), _
+ChrW(234), ChrW(235), "V", "B", ChrW(236), ChrW(239), "M+", "<+", "M", "<", ".k", ".", _
+"r", "Rk", "R", "Fk", "F", ")", "n", "/k", ChrW(232) + "k", "/", ChrW(203), ChrW(232), "u", "Uk", "U", _
+"i", "Ik", "I", "Q", ChrW(182), "c", "Ck", "C", "Hk", "H", "e", "Ek", "E", _
+";", ChrW(184), "j", "y", "Yk", "Y", "G", "o", "Ok", "O", _
+"'k", "'", ChrW(34) + "k", ChrW(34), "l", "Lk", "L", "g", _
+ _
+ChrW(200), "z", _
+ _
+ChrW(204), ChrW(205), ChrW(206), ChrW(207), ChrW(209), ChrW(210), ChrW(211), ChrW(212), ChrW(214), ChrW(216), ChrW(217), ChrW(220) + "k", ChrW(220), _
+ _
+ ChrW(8218), ChrW(168), "ks", ChrW(169), "kS", "k", "h", "q", "w", "`", "s", ChrW(162), "S", _
+"a", ChrW(161), "%", "W", ChrW(8226), ChrW(183), ChrW(8729), ChrW(183), "~j", "~", "\", "+", " " + ChrW(2307), _
+"^", "*", ChrW(222), ChrW(223), "(", ChrW(188), ChrW(189), ChrW(191), ChrW(192), ChrW(190), "A", "-", "&", "&", ChrW(338), "]", "~ ", "@", _
+ChrW(2366) + ChrW(2375), ChrW(2366) + ChrW(2373), ChrW(2306) + ChrW(2376), ChrW(2375) + ChrW(2381) + ChrW(2352), ChrW(2309) + ChrW(2380), ChrW(2309) + ChrW(2379), ChrW(2310) + ChrW(2373))
+
+' array_two contains their unicode replacements
+array_two = Array(ChrW(2416), "QZ+", "sa", "a", ChrW(2352) + ChrW(2381) + ChrW(2342) + ChrW(2381) + ChrW(2343), "Z", ChrW(34), ChrW(34), "'", "'", ChrW(2406), ChrW(2407), ChrW(2408), ChrW(2409), ChrW(2410), ChrW(2411), ChrW(2412), ChrW(2413), ChrW(2414), ChrW(2415), ChrW(2398) + ChrW(2381), ChrW(2392), _
+ChrW(2393), ChrW(2393) + ChrW(2381), ChrW(2394), ChrW(2332) + ChrW(2364) + ChrW(2381), ChrW(2395), ChrW(2396), ChrW(2397), ChrW(2398), ChrW(2399), ChrW(2353), ChrW(2345), ChrW(2340) + ChrW(2381) + ChrW(2340), ChrW(2340) + ChrW(2381) + ChrW(2340) + ChrW(2381), ChrW(2325) + ChrW(2381) + ChrW(2340), ChrW(2342) + ChrW(2371), ChrW(2325) + ChrW(2371), ChrW(2344) + ChrW(2381) + ChrW(2344), ChrW(2344) + ChrW(2381) + ChrW(2344) + ChrW(2381), "=k", "f=", _
+ ChrW(2361) + ChrW(2381) + ChrW(2344), ChrW(2361) + ChrW(2381) + ChrW(2351), ChrW(2361) + ChrW(2371), ChrW(2361) + ChrW(2381) + ChrW(2350), ChrW(2361) + ChrW(2381) + ChrW(2352), ChrW(2361) + ChrW(2381), ChrW(2342) + ChrW(2381) + ChrW(2342), ChrW(2325) + ChrW(2381) + ChrW(2359), ChrW(2325) + ChrW(2381) + ChrW(2359) + ChrW(2381), ChrW(2340) + ChrW(2381) + ChrW(2352), ChrW(2340) + ChrW(2381) + ChrW(2352) + ChrW(2381), _
+ ChrW(2331) + ChrW(2381) + ChrW(2351), ChrW(2335) + ChrW(2381) + ChrW(2351), ChrW(2336) + ChrW(2381) + ChrW(2351), ChrW(2337) + ChrW(2381) + ChrW(2351), ChrW(2338) + ChrW(2381) + ChrW(2351), ChrW(2342) + ChrW(2381) + ChrW(2351), ChrW(2332) + ChrW(2381) + ChrW(2334), ChrW(2342) + ChrW(2381) + ChrW(2357), _
+ ChrW(2358) + ChrW(2381) + ChrW(2352), ChrW(2335) + ChrW(2381) + ChrW(2352), ChrW(2337) + ChrW(2381) + ChrW(2352), ChrW(2338) + ChrW(2381) + ChrW(2352), ChrW(2331) + ChrW(2381) + ChrW(2352), ChrW(2325) + ChrW(2381) + ChrW(2352), ChrW(2347) + ChrW(2381) + ChrW(2352), ChrW(2352) + ChrW(2381) + ChrW(2342) + ChrW(2381) + ChrW(2352), ChrW(2342) + ChrW(2381) + ChrW(2352), ChrW(2346) + ChrW(2381) + ChrW(2352), ChrW(2346) + ChrW(2381) + ChrW(2352), ChrW(2327) + ChrW(2381) + ChrW(2352), ChrW(2352) + ChrW(2369), ChrW(2352) + ChrW(2370), _
+ _
+ ChrW(2321), ChrW(2323), ChrW(2324), ChrW(2310), ChrW(2309), ChrW(2312) + ChrW(2306), ChrW(2312), ChrW(2312), ChrW(2311), ChrW(2313), ChrW(2314), ChrW(2320), ChrW(2319), ChrW(2315), _
+ _
+ ChrW(2325) + ChrW(2381) + ChrW(2325), ChrW(2325), ChrW(2325), ChrW(2325) + ChrW(2381), ChrW(2326), ChrW(2326), ChrW(2326) + ChrW(2381), ChrW(2327), ChrW(2327), ChrW(2327) + ChrW(2381), ChrW(2328), ChrW(2328), ChrW(2328) + ChrW(2381), ChrW(2329), _
+ ChrW(2330), ChrW(2330), ChrW(2330) + ChrW(2381), ChrW(2331), ChrW(2332), ChrW(2332), ChrW(2332) + ChrW(2381), ChrW(2333), ChrW(2333) + ChrW(2381), ChrW(2334), _
+ _
+ ChrW(2335) + ChrW(2381) + ChrW(2335), ChrW(2335) + ChrW(2381) + ChrW(2336), ChrW(2335), ChrW(2336), ChrW(2337) + ChrW(2381) + ChrW(2337), ChrW(2337) + ChrW(2381) + ChrW(2338), ChrW(2337) + ChrW(2364), ChrW(2338) + ChrW(2364), ChrW(2337), ChrW(2338), ChrW(2339), ChrW(2339) + ChrW(2381), _
+ ChrW(2340), ChrW(2340), ChrW(2340) + ChrW(2381), ChrW(2341), ChrW(2341) + ChrW(2381), ChrW(2342) + ChrW(2381) + ChrW(2343), ChrW(2342), ChrW(2343), ChrW(2343), ChrW(2343) + ChrW(2381), ChrW(2343) + ChrW(2381), ChrW(2343) + ChrW(2381), ChrW(2344), ChrW(2344), ChrW(2344) + ChrW(2381), _
+ _
+ ChrW(2346), ChrW(2346), ChrW(2346) + ChrW(2381), ChrW(2347), ChrW(2347) + ChrW(2381), ChrW(2348), ChrW(2348), ChrW(2348) + ChrW(2381), ChrW(2349), ChrW(2349) + ChrW(2381), ChrW(2350), ChrW(2350), ChrW(2350) + ChrW(2381), _
+ ChrW(2351), ChrW(2351) + ChrW(2381), ChrW(2352), ChrW(2354), ChrW(2354), ChrW(2354) + ChrW(2381), ChrW(2355), ChrW(2357), ChrW(2357), ChrW(2357) + ChrW(2381), _
+ ChrW(2358), ChrW(2358) + ChrW(2381), ChrW(2359), ChrW(2359) + ChrW(2381), ChrW(2360), ChrW(2360), ChrW(2360) + ChrW(2381), ChrW(2361), ChrW(2368) + ChrW(2306), ChrW(2381) + ChrW(2352), _
+ _
+ ChrW(2342) + ChrW(2381) + ChrW(2342), ChrW(2335) + ChrW(2381) + ChrW(2335), ChrW(2335) + ChrW(2381) + ChrW(2336), ChrW(2337) + ChrW(2381) + ChrW(2337), ChrW(2325) + ChrW(2371), ChrW(2349), ChrW(2381) + ChrW(2351), ChrW(2337) + ChrW(2381) + ChrW(2338), ChrW(2333) + ChrW(2381), ChrW(2325) + ChrW(2381) + ChrW(2352), ChrW(2340) + ChrW(2381) + ChrW(2340) + ChrW(2381), ChrW(2358), ChrW(2358) + ChrW(2381), _
+ ChrW(2377), ChrW(2379), ChrW(2379), ChrW(2380), ChrW(2380), ChrW(2366), ChrW(2368), ChrW(2369), ChrW(2370), ChrW(2371), ChrW(2375), ChrW(2375), ChrW(2376), _
+ ChrW(2306), ChrW(2305), ChrW(2307), ChrW(2373), ChrW(2365), ChrW(2365), ChrW(2365), ChrW(2365), ChrW(2381) + ChrW(2352), ChrW(2381), "?", ChrW(2364), ":", _
+ ChrW(8216), ChrW(8217), ChrW(8220), ChrW(8221), ";", "(", ")", "{", "}", "=", ChrW(2404), ".", "-", ChrW(181), ChrW(2416), ",", ChrW(2381) + " ", "/", _
+ ChrW(2379), ChrW(2377), ChrW(2376) + ChrW(2306), ChrW(2381) + ChrW(2352) + ChrW(2375), ChrW(2324), ChrW(2323), ChrW(2321))
+
+    
+    For i = 0 To 235
+    
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = array_one(i)
+        .Replacement.Text = array_two(i)
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = False
+        .MatchCase = True
+        .MatchWholeWord = False
+        .MatchKashida = False
+        .MatchDiacritics = False
+        .MatchAlefHamza = False
+        .MatchControl = False
+        .MatchWildcards = False
+        .MatchSoundsLike = False
+        .MatchAllWordForms = False
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+Next i
+
+
+'
+' Regular expressions or wild card replacements  for  'chotii i'  and 'half r' etc  because this requires position interchange
+'
+' chotii i before a consonant
+
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "f([!f])"
+        .Replacement.Text = "\1" & ChrW(2367)
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = False
+        .MatchCase = True
+        .MatchWholeWord = False
+        .MatchKashida = False
+        .MatchDiacritics = False
+        .MatchAlefHamza = False
+        .MatchControl = False
+        .MatchAllWordForms = False
+        .MatchSoundsLike = False
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+
+' chotii i before a conjunct charecter as in  'priya' ,  'sthiti' etc
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "f([!f])" & ChrW(2381) & "([!f])"
+        .Replacement.Text = "\1" & ChrW(2381) & "\2" & ChrW(2367)
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = False
+        .MatchCase = True
+        .MatchWholeWord = False
+        .MatchKashida = False
+        .MatchDiacritics = False
+        .MatchAlefHamza = False
+        .MatchControl = False
+        .MatchAllWordForms = False
+        .MatchSoundsLike = False
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+
+' half r over  a  consonant without matraa
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "([" & ChrW(2325) & ChrW(2326) & ChrW(2327) & ChrW(2328) & _
+            ChrW(2330) & ChrW(2331) & ChrW(2332) & ChrW(2333) & ChrW(2335) & _
+            ChrW(2336) & ChrW(2337) & ChrW(2338) & ChrW(2338) & ChrW(2364) & _
+            ChrW(2339) & ChrW(2340) & ChrW(2341) & ChrW(2342) & ChrW(2343) & _
+            ChrW(2344) & ChrW(2346) & ChrW(2347) & ChrW(2348) & ChrW(2349) & _
+            ChrW(2350) & ChrW(2351) & ChrW(2352) & ChrW(2354) & ChrW(2357) & _
+            ChrW(2358) & ChrW(2359) & ChrW(2360) & ChrW(2361) & ChrW(2325) & _
+            ChrW(2381) & ChrW(2359) & "])Z"
+        .Replacement.Text = ChrW(2352) & ChrW(2381) & "\1"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = False
+        .MatchCase = False
+        .MatchWholeWord = False
+        .MatchKashida = False
+        .MatchDiacritics = False
+        .MatchAlefHamza = False
+        .MatchControl = False
+        .MatchAllWordForms = False
+        .MatchSoundsLike = False
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+
+
+' Half r over a consonant with one or more matraas
+
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "([" & ChrW(2325) & ChrW(2326) & ChrW(2327) & ChrW(2328) & _
+            ChrW(2330) & ChrW(2331) & ChrW(2332) & ChrW(2333) & ChrW(2335) & _
+            ChrW(2336) & ChrW(2337) & ChrW(2338) & ChrW(2338) & ChrW(2364) & _
+            ChrW(2339) & ChrW(2340) & ChrW(2341) & ChrW(2342) & ChrW(2343) & _
+            ChrW(2344) & ChrW(2346) & ChrW(2347) & ChrW(2348) & ChrW(2349) & _
+            ChrW(2350) & ChrW(2351) & ChrW(2352) & ChrW(2354) & ChrW(2357) & _
+            ChrW(2358) & ChrW(2359) & ChrW(2360) & ChrW(2361) & ChrW(2325) & _
+            ChrW(2381) & ChrW(2359) & "])([" & ChrW(2366) & ChrW(2367) & ChrW( _
+            2368) & ChrW(2369) & ChrW(2370) & ChrW(2375) & ChrW(2376) & ChrW( _
+            2379) & ChrW(2380) & ChrW(2306) & "]{1,})Z"
+        .Replacement.Text = ChrW(2352) & ChrW(2381) & "\1\2"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = False
+        .MatchCase = False
+        .MatchWholeWord = False
+        .MatchKashida = False
+        .MatchDiacritics = False
+        .MatchAlefHamza = False
+        .MatchControl = False
+        .MatchAllWordForms = False
+        .MatchSoundsLike = False
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    
+End Sub
+

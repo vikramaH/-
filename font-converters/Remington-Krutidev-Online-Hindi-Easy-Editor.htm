@@ -1,0 +1,752 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0040)http://www.ankitjain.info/writeHindi.htm -->
+<HTML><HEAD><TITLE>KrutiDev - Remington Online Unicode Hindi Editor</TITLE>
+<META http-equiv=Content-Language content=en-us>
+<META http-equiv=Content-Language content=hi-IN>
+<META content="MSHTML 6.00.2600.0" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+<META http-equiv=Content-Type content="text/html; charset=utf-8"></HEAD>
+<BODY>
+<SCRIPT language=JavaScript type=text/javascript>
+<!--
+// This script is written by Ankit jain, visit http://www.ankitjain.info or http://www.ankit.tk and modified by Ravishankar Shrivastava
+
+function display_text()
+{
+	document.write(ankit.textArea.value);
+	// = "" ;
+	//return 0;
+}
+
+var lcharno = '' ;  // last character pressed on keyboard  (not in unicoe number) 	
+
+function changeVal() 
+{
+	//ta= ankit.textArea;
+		var llchar = ankit.textArea.value.charCodeAt(ankit.textArea.value.length - 3);   // last to last character// 
+	var lchar = ankit.textArea.value.charCodeAt(ankit.textArea.value.length - 2);   // last character
+	var cchar = ankit.textArea.value.charAt(ankit.textArea.value.length - 1);	// current char pressed on ketboard
+	
+	
+//	alert (lchar);
+	//document.write (lastchar);
+	
+	if (cchar == '~')  /// this will cause 
+	{
+			ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2381) ;
+		lcharno = cchar;  // /save currents as last;
+		return; 	
+	}
+	
+	if (cchar == '*')  /// this will cause 
+	{
+			ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(39) ;
+		lcharno = cchar;  // /save currents as last;
+		return; 	
+	}
+
+	if (cchar == '$')  /// this will cause .
+	{
+			ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2365) ;
+		lcharno = cchar;  // /save currents as last;
+		return; 	
+	}
+
+	if (cchar == '^')  /// this will cause .
+	{
+			ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(39) ;
+		lcharno = cchar;  // /save currents as last;
+		return; 	
+	}
+
+	if (cchar == ':')  /// this will cause 
+	{
+			ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2352,2370) ;
+		lcharno = cchar;  // /save currents as last;
+		return; 	
+	} 
+
+	if (cchar == '`')  /// this will cause .
+	{
+			ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2371) ;
+		lcharno = cchar;  // /save currents as last;
+		return; 	
+	}
+	
+
+	if (cchar == '&')  /// this will convert .
+	{
+			ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(45) ;
+		lcharno = cchar;  // /save currents as last;
+		return; 	
+	}
+	if (cchar == '%')  /// this will convert to 
+	{
+			ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2307) ;
+		lcharno = cchar;  // /save currents as last;
+		return; 	
+	}
+	if (cchar == '-')  /// this will convert to 
+	{
+			ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(46) ;
+		lcharno = cchar;  // /save currents as last;
+		return; 	
+	}
+	if (cchar == '_')  /// this will convert to 
+	{
+			ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2315) ;
+		lcharno = cchar;  // /save currents as last;
+		return; 	
+	}
+	
+	if (cchar == 'A') /// this will cause 
+	{	
+				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2404) ;
+		lcharno = cchar;  // /save currents as last;
+		return;
+	}
+
+	if (cchar == 'a') /// this will cause 
+	{	
+				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2306) ;
+		lcharno == ''
+		return;
+	}
+
+	if (cchar == 'I') /// this will cause 
+	{	
+				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2334) ;
+		lcharno = cchar;  // /save currents as last;
+		return;
+	}
+	if (cchar == 'i') /// this will cause 
+	{		ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2346) ;
+		lcharno = cchar;  // /save currents as last;
+		return;
+	}
+	if (cchar == 'O') /// this will cause 
+	{	 
+				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2377) ;
+		lcharno = cchar;  // /save currents as last;
+		return;
+	}
+	if (cchar == 'o') /// this will cause 
+	{		ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2357) ;
+		lcharno = cchar;  // /save currents as last;
+		return;
+	}
+	if (cchar == 'E') /// this will cause 
+	{			ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2379) ;
+		lcharno = cchar;  // /save currents as last;
+		return;
+	}
+	if (cchar == 'e') /// this will cause 
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2350) ;
+		lcharno = cchar;  // /save currents as last;
+		return;
+
+	}
+	
+	if (cchar == 'U') /// this will cause 
+	{			ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2329) ;
+		lcharno = cchar;  // /save currents as last;
+		return;		
+	}
+	if (cchar == 'u') /// this will cause 
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2344) ;
+		lcharno = cchar;  // /save currents as last;
+		return;
+	}
+
+// (I-N-D-I-A) Intellenge N Determination In Ankit  
+	if (cchar == ' ') //
+	{	if ( lcharno == 'a' && lchar != 2366 )  // if space pressed and last characrer was 'a' the convert it to vowel 'aa'
+				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1)  + String.fromCharCode(2366)  + " "; 
+				lcharno == ''
+		return;		
+	}
+	
+	if (cchar == 'K') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2332,2381,2334) ;
+		lcharno == ''
+		return;	
+	}
+if (cchar == 'k') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2366) ;
+		lcharno == ''
+		return;	
+	}
+	
+if (cchar == 'Y') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2314) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'y') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2354) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'P') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2321) ;
+		lcharno == ''
+		return;	
+	}
+
+
+	if (cchar == 'p') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2330) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == '{') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2325,2381,2359) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == '}') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2342,2381,2357) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'S') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2376) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 's') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2375) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'D') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2405) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'd') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2325) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'F') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2341) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'f') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2367) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'G') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2312) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'g') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2361) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'H') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2349) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'h') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2368) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'J') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2358,2381,2352) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'j') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2352) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'L') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2358) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'l') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2360) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == '"') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2359) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'Z') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2352,2381) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'z') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2381,2352) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'X') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2306) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'x') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2327) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'C') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2305) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'c') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2348) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'V') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2335) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'v') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2309) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'B') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2336) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'b') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2311) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'N') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2331) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'n') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2342) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'M') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2337) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'm') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2313) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == '<') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2338) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == '>') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2333) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == '?') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2328) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'R') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2380) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'r') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2340) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'T') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2320) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 't') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2332) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'W') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2373) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'w') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2370) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'Q') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2347) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == 'q') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2369) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == '=') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2340,2381,2352) ;
+		lcharno == ''
+		return;	
+	}
+if (cchar == '+') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2364) ;
+		lcharno == ''
+		return;	
+	}
+	if (cchar == '[') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2326) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == ']') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(44) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == ';') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2351) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == '"') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2358) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == ',') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2319) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == '.') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2339) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == '/') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2343) ;
+		lcharno == ''
+		return;	
+	}
+
+	if (cchar == '!') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2323) ;
+		lcharno == ''
+		return;	
+	}
+
+if (cchar == '(') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2384) ;
+		lcharno == ''
+		return;	
+	}
+
+if (cchar == ')') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2342,2381,2343) ;
+		lcharno == ''
+		return;	
+	}
+
+if (cchar == '|') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2342,2381,2351) ;
+		lcharno == ''
+		return;	
+	}
+
+if (cchar == '#') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2310) ;
+		lcharno == ''
+		return;	
+	}
+
+if (cchar == '@') /// this will cause
+	{				ankit.textArea.value = ankit.textArea.value.substring(0,ankit.textArea.value.length - 1) + String.fromCharCode(2324) ;
+		lcharno == ''
+		return;	
+	}
+
+
+
+	
+	lcharno = cchar;  // /save currents as last;
+	
+
+	//alert("&#2351;&#2375;");
+	//alert(String.fromCharCode(2351,2375));
+}
+//-->
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+<!-- Hide from JavaScript-Impaired Browsers
+
+//document.write(String.fromCharCode(65));
+//document.write(String.fromCharCode(32));///
+//document.write(String.fromCharCode(65));
+
+
+// End Hiding -->
+</SCRIPT>
+
+<P><p><font size="4" color="#3300ff"> रेमिंगटन (कृतिदेव) हिन्दी कुंजीपट &nbsp;</font></p><p>इस पृष्ठ पर रेमिंगटन हिन्दी कुंजी पट (कृतिदेव श्रेणी के हिन्दी फ़ॉन्ट) में हिन्दी टाइप करने की सुविधा है. कुंजीपट को थोड़ा व्यवहारिक बनाया गया है. आधे अक्षरों यानी हलन्त के लिए टिल्ड (~) का प्रयोग करें. <strong>उदाहरण के लिए, <font color="#ff0066"> कक्का लिखने के लिए टाइप करें &ndash; dd~dk</strong> तथा कर्म लिखने के लिए टाइप करें - <strong>dj~e</strong> </font>. मात्राओं के लिए चित्र में दर्शाए अनुसार कुंजियाँ इस्तेमाल करें उदाहरण के लिए &ndash; कौ लिखने के लिए dR टाइप करें.<br /><br />यह पृष्ठ हिन्दी लिखने के लिये आपको एक सुलभ, ऑनलाइन तरीका प्रदान करता है. अन्य भाषाएँ लिखने में भी इसका उपयोग हो सकता है, जैसे - मराठी, नेपाली, इत्यादि. इस पृष्ठ पर लिखे हिन्दी को काट &ndash; चिपका कर हर प्रकार के अनुप्रयोगों में इस्तेमाल में लिया जा सकता है.<br /><br />इसे <a href="http://www.ankitjain.info/">अंकित जैन </a> तथा <a href="http://kaulonline.com/uninagari/">यूनिनागरी</a>  पृष्ठों में उपलब्ध कूट स्रोतों के सम्मिश्रण से तैयार किया गया है, अतः उन्हें धन्यवाद. किसी तरह की कोई गारंटी/वारंटी नहीं. अपने स्वयं के जोखिम पर इस्तेमाल करें.<br /><br />बग रपट तथा अपने सुझाव इस पते पर भेजें &ndash; raviratlami at gmail dot com</p><BR><SPAN style="FONT-SIZE: 12pt">[ This page provides an efficient online input 
+method (online editor) for Hindi / Devnagri language - in most popular Remington Hindi KeyBoard (used in KRUTI-DEV Hindi fonts). It can also be used for 
+other Indic languages which explicitly depend on Devnagari script for writing, 
+e.g. Marathi.]</SPAN></P>
+<br /><script type="text/javascript"><!--
+google_ad_client = "pub-1278744323386750";
+google_alternate_color = "FFCC66";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="8461264253";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><br />
+
+<P><SPAN style="FONT-SIZE: 10pt"><FONT color=#c0c0c0>[ Write text here, and use Cut/Copy Paste 
+]</FONT></SPAN></P>
+<FORM name=ankit>
+<TABLE id=AutoNumber1 style="BORDER-COLLAPSE: collapse" borderColor=#111111 
+height=146 cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD width="78%" height=126><TEXTAREA onkeyup=changeVal() style="FONT-SIZE: 12pt" tabIndex=0 name=textArea rows=13 cols=72></TEXTAREA>
+      <P></P></TD>
+    <TD width="22%" height=126>&nbsp;</TD></TR>
+  <TR>
+    <TD width="78%" height=19>
+      <TABLE id=AutoNumber2 
+      style="PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; BORDER-COLLAPSE: collapse" 
+      borderColor=#111111 cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD width="50%">
+            <P 
+          align=right><INPUT tabIndex=2 type=reset value=Reset name=B2></P></TD>
+          <TD width="50%">&nbsp;</TD></TR></TBODY></TABLE></TD>
+    <TD width="22%" height=19>&nbsp;</TD></TR></TBODY></TABLE>
+<P><SPAN style="FONT-SIZE: 8pt; FONT-STYLE: italic">* The conversion form 
+"keyboard characters" to "Hindi characters" occurs only at the last value of 
+text area, not in-between a sentence.</SPAN></P></FORM>
+
+<P><FONT color=#c0c0c0>[ Help ]</FONT></p>
+<P><TABLE cellSpacing=2 cellPadding=2 border=0>
+  <TBODY>
+  <TR>
+    <TD width=30 bgColor=silver>
+      <CENTER>्<BR>ृ</CENTER></TD>
+    <TD width=30 bgColor=silver>
+      <CENTER>ओ<BR>1</CENTER></TD>
+    <TD width=30 bgColor=silver>
+      <CENTER>औ<BR>2</CENTER></TD>
+    <TD width=30 bgColor=silver>
+      <CENTER>आ<BR>3</CENTER></TD>
+    <TD width=30 bgColor=silver>
+      <CENTER>ऽ<BR>4</CENTER></TD>
+    <TD width=30 bgColor=silver>
+      <CENTER>ः<BR>5</CENTER></TD>
+    <TD width=30 bgColor=silver>
+      <CENTER>'<BR>6</CENTER></TD>
+    <TD bgColor=black></TD>
+    <TD width=30 bgColor=silver>
+      <CENTER>-<BR>7</CENTER></TD>
+    <TD width=30 bgColor=silver>
+      <CENTER>'<BR>8</CENTER></TD>
+    <TD width=30 bgColor=silver>
+      <CENTER>ॐ<BR>9</CENTER></TD>
+    <TD width=30 bgColor=silver>
+      <CENTER>द्ध<BR>0</CENTER></TD>
+    <TD width=30 bgColor=silver>
+      <CENTER>ऋ<BR>.</CENTER></TD>
+    <TD width=30 bgColor=silver>
+      <CENTER>़<BR>त्र</CENTER></TD>
+    <TD width=60 bgColor=silver>Bksp</TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=2 cellPadding=2 border=0>
+  <TBODY>
+  <TR>
+    <TD width=45 bgColor=silver>Tab<BR>-</TD>
+    <TD width=30 bgColor=#f4a460>
+      <CENTER>qफ<BR>ु</CENTER></TD>
+    <TD width=30 bgColor=pink>
+      <CENTER>wॅ<BR>ू</CENTER></TD>
+    <TD width=30 bgColor=#ffdab9>
+      <CENTER>eो<BR>म</CENTER></TD>
+    <TD width=30 bgColor=khaki>
+      <CENTER>rौ<BR>त</CENTER></TD>
+    <TD width=30 bgColor=khaki>
+      <CENTER>tऐ<BR>ज</CENTER></TD>
+    <TD bgColor=black></TD>
+    <TD width=30 bgColor=khaki>
+      <CENTER>yऊ<BR>ल</CENTER></TD>
+    <TD width=30 bgColor=khaki>
+      <CENTER>uङ<BR>न</CENTER></TD>
+    <TD width=30 bgColor=#ffdab9>
+      <CENTER>iञ<BR>प</CENTER></TD>
+    <TD width=30 bgColor=pink>
+      <CENTER>oॉ<BR>व</CENTER></TD>
+    <TD width=30 bgColor=#f4a460>
+      <CENTER>pऑ<BR>च</CENTER></TD>
+    <TD width=30 bgColor=#f4a460>
+      <CENTER>{क्ष<BR>ख</CENTER></TD>
+    <TD width=30 bgColor=silver>
+      <CENTER>}द्व<BR>,</CENTER></TD>
+    <TD width=45 bgColor=silver>\द्य<BR>\</TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=2 cellPadding=2 border=0>
+  <TBODY>
+  <TR>
+    <TD width=52 bgColor=silver>Caps</TD>
+    <TD width=30 bgColor=#f4a460>
+      <CENTER>a।<BR>.</CENTER></TD>
+    <TD width=30 bgColor=pink>
+      <CENTER>sै<BR>े</CENTER></TD>
+    <TD width=30 bgColor=#ffdab9>
+      <CENTER>d॥<BR>क</CENTER></TD>
+    <TD width=30 bgColor=khaki>
+      <CENTER>fथ<BR><FONT color=red><B>ि</B></FONT></CENTER></TD>
+    <TD width=30 bgColor=khaki>
+      <CENTER>gई<BR>ह</CENTER></TD>
+    <TD bgColor=black></TD>
+    <TD width=30 bgColor=khaki>
+      <CENTER>hभ<BR>ी</CENTER></TD>
+    <TD width=30 bgColor=khaki>
+      <CENTER>jश्र<BR><FONT color=red><B>र</B></FONT></CENTER></TD>
+    <TD width=30 bgColor=#ffdab9>
+      <CENTER>kज्ञ<BR>ा</CENTER></TD>
+    <TD width=30 bgColor=pink>
+      <CENTER>lश<BR>स</CENTER></TD>
+    <TD width=30 bgColor=#f4a460>
+      <CENTER>:रू<BR>य</CENTER></TD>
+    <TD width=30 bgColor=#f4a460>
+      <CENTER>"ष<BR>'</CENTER></TD>
+    <TD width=74 bgColor=silver>Enter</TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=2 cellPadding=2 border=0>
+  <TBODY>
+  <TR>
+    <TD width=82 bgColor=silver>Shift</TD>
+    <TD width=30 bgColor=#f4a460>
+      <CENTER>zृ<BR>्र</CENTER></TD>
+    <TD width=30 bgColor=pink>
+      <CENTER>xं<BR>ग</CENTER></TD>
+    <TD width=30 bgColor=#ffdab9>
+      <CENTER>cँ<BR>ब</CENTER></TD>
+    <TD width=30 bgColor=khaki>
+      <CENTER>vट<BR>अ</CENTER></TD>
+    <TD width=30 bgColor=khaki>
+      <CENTER>bठ<BR>इ</CENTER></TD>
+    <TD bgColor=black></TD>
+    <TD width=30 bgColor=khaki>
+      <CENTER>nछ<BR>द</CENTER></TD>
+    <TD width=30 bgColor=khaki>
+      <CENTER>mड<BR>उ</CENTER></TD>
+    <TD width=30 bgColor=#ffdab9>
+      <CENTER><ढ<BR>ए</CENTER></TD>
+    <TD width=30 bgColor=pink>
+      <CENTER>>झ<BR>ण</CENTER></TD>
+    <TD width=30 bgColor=#f4a460>
+      <CENTER>?घ<BR>ध</CENTER></TD>
+    <TD width=82 bgColor=silver>Shift</TD></TR></TBODY></TABLE><!--- keyboard end --><BR>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD width=50 bgColor=khaki>तर्जनी</TD>
+    <TD width=50 bgColor=#ffdab9>मध्यमा</TD>
+    <TD width=50 bgColor=pink>अनामिका</TD>
+    <TD width=50 
+bgColor=#f4a460>कनिष्ठिका</TD></TR></TBODY></TABLE><BR><BR>Questions? Comments? 
+Send a mail to<BR>raviratlami at gmail dot com <BR><BR><BR></p>
+<p>हिन्दी साहित्य की रचनाएँ पढ़ें - <a href="http://rachanakar.blogspot.com/">रचनाकार </a> पर</p><p>हिन्दी चिट्ठाकार <a href="http://raviratlami.blogspot.com/">रविरतलामी </a> को अब तक आपने पढ़ा या नहीं ?&nbsp;</p>
+<P>&nbsp;</P>
+<script type="text/javascript"><!--
+google_ad_client = "pub-1278744323386750";
+google_alternate_color = "FFCC66";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="8461264253";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+
+</BODY></HTML>
